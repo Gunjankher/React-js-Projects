@@ -1,4 +1,5 @@
 import { Client, Account, ID } from "appwrite"
+import conf from "../conf/conf.js";
 
 // make a  class of Authservice and export it to the authservice 
 // make a client 
@@ -17,8 +18,8 @@ account;
 
 constructor (){
 this.client
-.setEndpoint(appwriteUrl)
-.setProject(appwriteProjectId)
+.setEndpoint(conf.appwriteUrl)
+.setProject(conf.appwriteProjectId)
 this.account = new Account(this.account)
 
 }
@@ -29,7 +30,7 @@ async createAccount({email, password , name}) {
 
 try {
     
- const userAccount = await this.account.create(ID.unique , email, password ,name) 
+ const userAccount = await this.account.create(ID.unique() , email, password ,name) 
 
 // if block for login 
 
