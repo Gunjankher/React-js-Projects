@@ -39,7 +39,43 @@ try {
 
 }
   return (
-    <div>SignUp</div>
+    <div>SignUp
+
+<form
+onSubmit={handleSubmit(create)}
+
+></form>
+<Input
+label = "email :"
+placeholder = "Enter your Email"
+type = "email"
+{...register("email",{
+required : true,
+validate :{
+    matchPatern: (value) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
+    "Email address must be a valid address",
+}
+
+})}
+/>
+
+<Input
+label = "password"
+placeholder = "Enter your password"
+type = "password"
+{...register ("password",{
+required : true
+
+})}
+
+
+
+/>
+
+
+
+    </div>
+    
   )
 }
 
