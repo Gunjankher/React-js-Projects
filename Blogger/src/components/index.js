@@ -8,7 +8,10 @@ import Login from './Login'
 import SignUp from './SignUp'
 import Footer from './Footer/Footer'
 import RTE from './RTE'
-
+import PostCard from './PostCard'
+import PostForm from './post-form/PostForm'
+import AuthLayout from './AuthLayout'
+import Input from './Input'
 
 
 export {
@@ -21,5 +24,8 @@ export {
     Login,
     SignUp,
     Footer,
-    RTE
+    RTE,
+    PostCard,
+    PostForm,
+    Input,
 }
