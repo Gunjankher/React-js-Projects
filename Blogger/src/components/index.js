@@ -7,6 +7,7 @@ import Select from './Select'
 import Login from './Login'
 import SignUp from './SignUp'
 import Footer from './Footer/Footer'
+import RTE from './RTE'
 
 
 
@@ -18,5 +19,7 @@ export {
     Button,
     Select,
     Login,
-    SignUp
+    SignUp,
+    Footer,
+    RTE
 }
