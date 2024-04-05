@@ -35,7 +35,7 @@ active :!authStatus
 
 {
     name :"Signup",
-    slug :"/singup",
+    slug :"/signup",
     active : !authStatus
 },
 

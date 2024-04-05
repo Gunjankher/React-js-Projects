@@ -4,8 +4,8 @@ import './App.css'
 import authService from './appwrite/auth'
 import { useEffect } from 'react'
 import {login , logout} from './store/authSlice'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import {Header} from './components/index'
+import {Footer} from './components/index'
 
 
 function App() {

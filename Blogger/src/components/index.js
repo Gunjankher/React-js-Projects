@@ -28,4 +28,5 @@ export {
     PostCard,
     PostForm,
     Input,
+    AuthLayout
 }
