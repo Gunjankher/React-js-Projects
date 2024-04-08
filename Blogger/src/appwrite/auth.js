@@ -1,5 +1,5 @@
 import { Client, Account, ID } from "appwrite"
-import conf from "../conf/conf.js";
+import conf from "../conf/conf";
 
 // make a  class of Authservice and export it to the authservice 
 // make a client 
@@ -65,6 +65,9 @@ try {
 }
     
 }
+
+
+
 
 
 async logout (){

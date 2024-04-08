@@ -4,7 +4,7 @@
 // 
 
 import React, { useState } from 'react'
-import authservice from '../appwrite/auth'
+import authService from '../appwrite/auth'
 import {useDispatch } from 'react-redux'
 import { login } from '../store/authSlice'
 import {Button,Input , Logo} from './index'
@@ -25,9 +25,9 @@ SetError("")
 
 try {
     
- const userData = await authservice.createAccount(data)
+ const userData = await authService.createAccount(data)
  if(userData){
-    const userData = await authservice.getCurrentUser()
+    const userData = await authService.getCurrentUser()
     if(userData) dispatch(login(userData))
     navigate("/")
  }

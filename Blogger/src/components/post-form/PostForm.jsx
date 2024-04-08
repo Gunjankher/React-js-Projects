@@ -9,7 +9,8 @@ import { useNavigate } from "react-router-dom";
 import appwriteService from '../../appwrite/config'
 import { useForm } from "react-hook-form";
 import {Button , Input , RTE, Select} from '../index'
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
+
 
 export default function PostForm ({post}){
 const {register , handleSubmit, watch , setValue, control,getValues} = useForm({
@@ -76,7 +77,7 @@ return ""
 
 },[])
 
-React.useEffect(()=>{
+useEffect(()=>{
 const subscription = watch((value, {name})=>{
 if(name==="title"){
     setValue("slug",slugTransform(value.title),{shouldValidate: true})
