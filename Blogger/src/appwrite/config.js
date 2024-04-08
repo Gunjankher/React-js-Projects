@@ -17,10 +17,11 @@ constructor(){
 
 async createPost ({title,slug,content,featuredImage , status , userId}){
 try {
-    
+    const documentId = ID.unique()
 return await this.databases.createDocument(
 conf.appwriteDatabaseId,
 conf.appwriteCollectionId,
+documentId,
 slug,
 {
     title,
@@ -38,7 +39,7 @@ slug,
 }
 
 
-async updatePost (){
+async updatePost (slug, {title, content, featuredImage, status}){
 
     try {
         
@@ -60,7 +61,7 @@ slug,
     }
 }
 
-async deletePost (){
+async deletePost (slug){
 try {
     await this.databases.deleteDocument(
 conf.appwriteDatabaseId,

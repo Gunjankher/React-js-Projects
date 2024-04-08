@@ -19,12 +19,13 @@ const login = async(data)=>{
 setError("")
 try {
     
- session = await authservice.login(data)
+  const session = await authservice.login(data)
  if(session){
-   const userData=  await authservice.getCurrentUser()
- }
+   const userData =  await authservice.getCurrentUser()
+   if(userData)dispatch(authLogin(userData))
+   navigate("/")
+}
 
- if(userData)dispatch(authLogin(userData))
 
 } catch (error) {
     setError(error.message)
