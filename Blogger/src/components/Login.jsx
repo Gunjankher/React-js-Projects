@@ -77,8 +77,8 @@ try {
                 />
                 <Button
                 type="submit"
-                className="w-full"
-                >Sign in</Button>
+                className="w-full bg-blue-700"
+                > Sign in</Button>
             </div>
         </form>
         </div>

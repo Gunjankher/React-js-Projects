@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 import {login , logout} from './store/authSlice'
 import {Header} from './components/index'
 import {Footer} from './components/index'
+import { Outlet } from 'react-router-dom'
 
 
 function App() {
@@ -29,7 +30,7 @@ dispatch(login({userData}))
 <div className='w-full block'>
 <Header />
 <main>
-  {/* <Outlet /> */}
+  <Outlet />
 </main>
 <Footer />
 </div>
