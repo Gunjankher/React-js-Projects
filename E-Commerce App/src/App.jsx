@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1 className= 'text-black text-2xl bg-fuchsia-400'>This is a E-Commerce application</h1>
+      
     </>
   )
 }
