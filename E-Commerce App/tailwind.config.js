@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+      colors:{
       amazonclone :{
         background : "#EAEDED",
         light_blue :"232F3A",
@@ -14,6 +15,7 @@ export default {
 
 
       }
+    }
     },
   },
   plugins: [],
