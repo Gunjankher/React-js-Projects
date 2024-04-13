@@ -1,7 +1,6 @@
 import React from 'react'
 import Carousel from './Carousel'
-import HomepageCard from './HomepageCard'
-import HomePageCardPage from '../../pages/HomePageCardPage'
+
 
 function Homepage() {
   return (
@@ -9,7 +8,8 @@ function Homepage() {
 
 <div className='min-w-[1000px] max-w-[1500px] m-auto'>
 
-Homepage\
+Homepage
+<Carousel />
 </div>
     </div>
   )
