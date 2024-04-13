@@ -8,10 +8,10 @@ function Carousel() {
 
 
   return (
-<div className='h-[600px] bg-white bg-gradient-to-b from-stone-900'>
+<div className='h-[600px] bg-white'>
 
 <Swiper
-className='h-[50%] '
+className='h-[50%]'
 centeredSlides = {true}
 pagination = {{
     clickable : true
@@ -42,7 +42,7 @@ autoplay = {{
 
 </Swiper>
 
-{/* <div className='h-[50%] bg-gradient-to-b from-stone-900' /> */}
+<div className='h-[50%] bg-gradient-to-b from-stone-700 ' />
 </div>
 
   )
