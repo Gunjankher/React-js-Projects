@@ -12,7 +12,6 @@ function Carousel() {
 
 <Swiper
 className='h-[50%]'
-loop ={true}
 pagination = {{
     clickable : true
 }}
