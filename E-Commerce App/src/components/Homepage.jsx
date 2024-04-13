@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from './Carousel'
+import HomepageCard from './HomepageCard'
 
 function Homepage() {
   return (
@@ -10,8 +11,13 @@ function Homepage() {
 Homepage
 <Carousel />
 <div className='grid grid-cols-3 xl:grid-cols-4'>
-<div>1</div>
-<div>2</div>
+
+<HomepageCard
+title={"Appliances for your home | Up to 55% off"}
+name1 = {"Air Conditior"}
+img = {'../Images/homecard_1.jpg'}
+/>
+
 <div>3</div>
 <div>4</div>
 </div>
