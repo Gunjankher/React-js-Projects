@@ -9,6 +9,12 @@ function Homepage() {
 
 Homepage
 <Carousel />
+<div className='grid grid-cols-3 xl:grid-cols-4'>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+</div>
 
 </div>
     </div>

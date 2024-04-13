@@ -8,19 +8,19 @@ function Carousel() {
 
 
   return (
-<div className='h-[600px] bg-white swiper-wrapper '>
+<div className='h-[600px] bg-white '>
 
 <Swiper
 className='h-[50%]'
+centeredSlides = {true}
 pagination = {{
     clickable : true
 }}
-spaceBetween={0}
+spaceBetween={30}
 navigation= {true}
 modules={[Autoplay, Pagination , Navigation]}
 autoplay = {{
     delay : 2500,
-    disableOnInteraction : false
 }}
 
 
@@ -41,8 +41,12 @@ autoplay = {{
 
 
 </Swiper>
+
+<div className='h-[50%] bg-gradient-to-b from-stone-900' />
 </div>
+
   )
 }
 
 export default Carousel
+
