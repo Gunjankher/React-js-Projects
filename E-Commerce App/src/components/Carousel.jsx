@@ -8,7 +8,7 @@ function Carousel() {
 
 
   return (
-<div className='h-[600px] bg-white'>
+<div className='h-[600px]'>
 
 <Swiper
 className='h-[50%]'
