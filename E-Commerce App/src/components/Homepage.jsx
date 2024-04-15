@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from './Carousel'
+import HomeCard from './HomeCard'
 
 
 function Homepage() {
@@ -10,6 +11,12 @@ function Homepage() {
 
 Homepage
 <Carousel />
+<div className='grid grid-cols-3 xl:grid-cols-4'>
+<HomeCard 
+
+/>
+
+</div>
 </div>
     </div>
   )
