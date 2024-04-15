@@ -1,6 +1,7 @@
 import React from 'react'
-import Carousel from './Carousel'
-import HomeCard from './HomeCard'
+import CarouselPage from '../../pages/CarouselPage'
+import HomeCardPage from '../../pages/HomeCardPage'
+import CarouselProductPage from '../../pages/CarouselProductPage'
 
 
 function Homepage() {
@@ -10,13 +11,11 @@ function Homepage() {
 <div className='min-w-[1000px] max-w-[1500px] m-auto'>
 
 Homepage
-<Carousel />
-<div className='grid grid-cols-3 xl:grid-cols-4'>
-<HomeCard 
+<CarouselPage />
+<HomeCardPage />
+<CarouselProductPage />
 
-/>
 
-</div>
 </div>
     </div>
   )
