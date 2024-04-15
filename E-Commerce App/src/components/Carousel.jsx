@@ -8,7 +8,7 @@ function Carousel() {
 
 
   return (
-<div className='h-[600px]'>
+<div className='h-[700px]'>
 
 <Swiper
 className='h-full'
