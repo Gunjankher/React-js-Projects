@@ -17,7 +17,7 @@ pagination = {{
     clickable : true
 }}
 spaceBetween={30}
-navigation= {true}
+navigation ={true}
 modules={[Autoplay, Pagination , Navigation]}
 autoplay = {{
     delay : 2500,
@@ -32,7 +32,7 @@ autoplay = {{
 <SwiperSlide><img src="../Images/carousel/carousel_4.jpg" alt="" /></SwiperSlide>
 <SwiperSlide><img src="../Images/carousel/carousel_5.jpg" alt="" /></SwiperSlide>
 <SwiperSlide><img src="../Images/carousel/carousel_6.jpg" alt="" /></SwiperSlide>
-<SwiperSlide><img src="../Imagescarousel/carousel/carousel_7.jpg" alt="" /></SwiperSlide>
+<SwiperSlide><img src="../Images/carousel/carousel_7.jpg"/></SwiperSlide>
 <SwiperSlide><img src="../Images/carousel/carousel_3.jpg" alt="" /></SwiperSlide>
 <SwiperSlide><img src="../Images/carousel/carousel_4.jpg" alt="" /></SwiperSlide>
 <SwiperSlide><img src="../Images/carousel/carousel_5.jpg" alt="" /></SwiperSlide>

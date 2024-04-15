@@ -1,5 +1,5 @@
 import React from 'react'
-import Carousel from '../public/Images/Homecard/Carousel'
+import Carousel from '../src/components/Carousel'
 
 function CarouselPage() {
   return (
