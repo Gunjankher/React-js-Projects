@@ -2,6 +2,8 @@ import React from 'react'
 import Carousel from './Carousel'
 import HomeCard from './HomeCard'
 import CarouselProduct from './CarouselProduct'
+import CarouselProduct2 from './CarouselProduct2'
+import NavBar from './Navbar'
 
 function Homepage() {
   return (
@@ -9,7 +11,8 @@ function Homepage() {
 
 <div className='min-w-[1000px] max-w-[1500px]'>
 
-Homepage
+<NavBar />
+
 <Carousel/>
 // Homepage
 <div className='grid grid-cols-3 xl:grid-cols-4 gap-5'>
@@ -105,6 +108,7 @@ Homepage
     </div>
 
 <CarouselProduct />
+<CarouselProduct2 />
 
 
 </div>
