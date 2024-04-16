@@ -17,37 +17,96 @@ function CarouselProduct() {
        modules={[Navigation]}
  >
 
-  <div className='bg-white '>
 <SwiperSlide>
-<div 
-className='w-[200px] h-[190px] bg-slate-200 mx-5 gap-x-5 '
->
-       <img 
+<div><img 
        className='mx-10 h-[180px] w-[158px] ml-[20px] px-2 py-1'
        src="../Images/CarouselProduct/car_product_1.jpg"/>
-</div>
-<div className='flex box-border'>
-  <div className='ml-5 m-1 w-[70px] h-[20px] bg-red-600 rounded-sm text-center text-[10px] text-white font-semibold box-border'>Upto 38% off</div>
-  <div className='-mr-16 pl-4 text-[13px] mt-1 text-red-600 font-semibold '>limited time-deal</div>
+<div className='mx-8 text-[15px] text-red-500 font-semibold'> upto 90% off</div>
+<div className='mx-8 '>price 10000 andsfsfs</div>
+
 </div>
 </SwiperSlide>
-
-
 <SwiperSlide>
-<div 
-className='w-[200px] h-[190px] bg-slate-200 mx-5'
->
-       <img 
+<div><img 
+       className='mx-10 h-[180px] w-[158px] ml-[20px] px-2 py-1'
+       src="../Images/CarouselProduct/car_product_2.jpg"/>
+<div className='mx-8 text-[15px] text-red-500 font-semibold'> upto 90% off</div>
+<div className='mx-8 '>price 10000 andsfsfs</div>
+
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div><img 
+       className='mx-10 h-[180px] w-[158px] ml-[20px] px-2 py-1'
+       src="../Images/CarouselProduct/car_product_3.jpg"/>
+<div className='mx-8 text-[15px] text-red-500 font-semibold'> upto 90% off</div>
+<div className='mx-8 '>price 10000 andsfsfs</div>
+
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div><img 
+       className='mx-10 h-[180px] w-[158px] ml-[20px] px-2 py-1'
+       src="../Images/CarouselProduct/car_product_4.jpg"/>
+<div className='mx-8 text-[15px] text-red-500 font-semibold'> upto 90% off</div>
+<div className='mx-8'>price 10000 andsfsfs</div>
+
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div><img 
+       className='mx-10 h-[180px] w-[158px] ml-[20px] px-2 py-1'
+       src="../Images/CarouselProduct/car_product_5.jpg"/>
+<div className='mx-8 text-[15px] text-red-500 font-semibold'> upto 90% off</div>
+<div className='mx-8 '>price 10000 andsfsfs</div>
+
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div><img 
+       className='mx-10 h-[180px] w-[158px] ml-[20px] px-2 py-1'
+       src="../Images/CarouselProduct/car_product_6.jpg"/>
+<div className='mx-8 text-[15px] text-red-500 font-semibold'> upto 90% off</div>
+<div className='mx-8 '>price 10000 andsfsfs</div>
+
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div><img 
        className='mx-10 h-[180px] w-[158px] ml-[20px] px-2 py-1'
        src="../Images/CarouselProduct/car_product_1.jpg"/>
-</div>
-<div className='flex box-border'>
-  <div className='ml-5 m-1 w-[70px] h-[20px] bg-red-600 rounded-sm text-center text-[10px] text-white font-semibold box-border'>Upto 38% off</div>
-  <div className='-mr-16 pl-4 text-[13px] mt-1 text-red-600 font-semibold '>limited time-deal</div>
+<div className='mx-8 text-[15px] text-red-500 font-semibold'> upto 90% off</div>
+<div className='mx-8'>price 10000 andsfsfs</div>
+
 </div>
 </SwiperSlide>
+<SwiperSlide>
+<div><img 
+       className='mx-10 h-[180px] w-[158px] ml-[20px] px-2 py-1'
+       src="../Images/CarouselProduct/car_product_2.jpg"/>
+<div className='mx-8 text-[15px] text-red-500 font-semibold'> upto 90% off</div>
+<div className='mx-8 text-nowrap'>price 10000 andsfsfs</div>
 
-       </div>
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div><img 
+       className='mx-10 h-[180px] w-[158px] ml-[20px] px-2 py-1'
+       src="../Images/CarouselProduct/car_product_3.jpg"/>
+<div className='mx-8 text-[15px] text-red-500 font-semibold'> upto 90% off</div>
+<div className='mx-8 text-nowrap'>price 10000 andsfsfs</div>
+
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div><img 
+       className='mx-10 h-[180px] w-[158px] ml-[20px] px-2 py-1'
+       src="../Images/CarouselProduct/car_product_1.jpg"/>
+<div className='mx-8 text-[15px] text-red-500 font-semibold'> upto 90% off</div>
+<div className='mx-8 text-nowrap'>price 10000 andsfsfs</div>
+
+</div>
+</SwiperSlide>
 
        </Swiper>
     </div>
@@ -55,3 +114,4 @@ className='w-[200px] h-[190px] bg-slate-200 mx-5'
 }
 
 export default CarouselProduct
+

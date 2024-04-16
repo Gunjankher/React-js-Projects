@@ -1,0 +1,26 @@
+ <div className=''>
+<SwiperSlide
+>
+<div 
+className='w-[200px] h-[190px] bg-slate-200 mx-5'
+>
+</div>
+<div className='flex box-border'>
+  <div className='ml-5 m-1 w-[70px] h-[20px] bg-red-600 rounded-sm text-center text-[10px] text-white font-semibold box-border'>Upto 38% off</div>
+  <div className='-mr-16 pl-4 text-[13px] mt-1 text-red-600 font-semibold '>limited time-deal</div>
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div 
+className='w-[200px] h-[190px] bg-slate-200 mx-5'
+>
+       <img 
+       className='mx-10 h-[180px] w-[158px] ml-[20px] px-2 py-1'
+       src="../Images/CarouselProduct/car_product_1.jpg"/>
+</div>
+<div className='flex box-border'>
+  <div className='ml-5 m-1 w-[70px] h-[20px] bg-red-600 rounded-sm text-center text-[10px] text-white font-semibold box-border'>Upto 38% off</div>
+  <div className='-mr-16 pl-4 text-[13px] mt-1 text-red-600 font-semibold '>limited time-deal</div>
+</div>
+</SwiperSlide>
+</div>
