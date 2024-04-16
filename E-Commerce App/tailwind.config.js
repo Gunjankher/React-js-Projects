@@ -9,7 +9,7 @@ export default {
       colors:{
       amazonclone :{
         background : "#EAEDED",
-        light_blue :"232F3A",
+        light_blue :"#232F3E",
         yellow : "#FEBD69",
         DEFAULT : "#131921"
 
