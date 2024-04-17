@@ -21,7 +21,7 @@ if(!product?.title)return <h1>loading....</h1>
   return (
     <div className='min-w-[1000px] max-w-[1500px] m-auto bg-orange-400 '>
 <div className='grid grid-cols-10'>
-<img src={`${product.image}`} />
+<img src={`${product.title}`} />
 <div className='col-span-3 bg-blue-400'>
 hi
 </div>
