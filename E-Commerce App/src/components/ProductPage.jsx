@@ -19,11 +19,11 @@ getProduct()
 if(!product?.title)return <h1>loading....</h1>
 
   return (
+    <div className='h-screen bg-amazonclone-background'>
     <div className='min-w-[1000px] max-w-[1500px] m-auto bg-orange-400 '>
 <div className='grid grid-cols-10'>
+<div className='col-span-3 bg-blue-400 p-8 '>
 <img src={`${product.title}`} />
-<div className='col-span-3 bg-blue-400'>
-hi
 </div>
 {/* middle */}
 <div className='col-span-5 bg-pink-500'>
@@ -35,6 +35,7 @@ hi
 </div>
 
 </div>
+    </div>
     </div>
   )
 }
