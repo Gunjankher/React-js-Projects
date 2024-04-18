@@ -1,5 +1,5 @@
 import React, { useState , useEffect} from 'react'
-import {useParams}from 'react-router-dom'
+import {useParams ,Link}from 'react-router-dom'
 import { callAPI } from '../utlis/CallApi'
 import ProductDetails from './ProductDetails'
 import {GB_CURRENCY} from '../utlis/constants' 
@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux'
 
 function ProductPage() {
     const[product, setProduct] = useState(null)
+    const [quantity , setQuantity] = useState("1")
     const{id} = useParams()
     const dispatch = useDispatch()
 
@@ -18,6 +19,9 @@ function ProductPage() {
             setProduct(ProductResult[id])
         })
     }
+    // const addQuantityToProduct = ()=>{
+    //   setProduct(product.quantity=  parseInt(quantity))
+    // }
 
     useEffect(()=>{
 getProduct()
@@ -48,13 +52,15 @@ if(!product?.title)return <h1>loading....</h1>
   <div className='text-sm xl:text-base font-semibold mt-1 text-blue-500'>Free Delivery</div>
   <div className='text-base xl:text-lg font-semibold mt-1 text-green-600'>In Stock</div>
   <div className='text-base xl:text-lg mt-1'>Quantity:
-<select className= "p-2 bg-white border rounded-md focus:border-indigo-600 mx-1">
+<select  onChange ={(e)=> setQuantity(e.target.value)}className= "p-2 bg-white border rounded-md focus:border-indigo-600 mx-1">
   <option>1</option>
   <option>2</option>
   <option>3</option>
 </select>
   </div>
-<button onClick={()=> dispatch(addToCart())} className='bg-yellow-400 w-full p-3 text-xs xl:text-sm rounded hover:bg-yellow-500 m-3 '>Add to Cart</button>
+  <Link to={'/checkout'}>
+<button onClick={() => dispatch(addToCart({ ...product, quantity: parseInt(quantity) }))}  className='bg-yellow-400 w-full p-3 text-xs xl:text-sm rounded hover:bg-yellow-500 m-3 '>Add to Cart</button>
+  </Link>
 </div>
 </div>
     </div>
