@@ -2,8 +2,12 @@ import React from 'react'
 import {ShoppingCartIcon} from '@heroicons/react/24/outline'
 import Search from './Search'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 function Navbar() {
+
+const cart = useSelector((state)=> state.cart.productsNumber)
+
   return (
     <header className='m-w-[1000px]'>
        <div className='flex bg-amazonclone text-white h-[60px]'>
@@ -37,6 +41,11 @@ function Navbar() {
 <Link to={"/checkout"}>
 <div className='pl-3 pr-3 flex'>
 <ShoppingCartIcon className='h-[48px]' />
+<div className='relative'> 
+<div className='absolute right-[9px] font-bold m-2 text-orange-400'>
+{cart}
+</div>
+</div>
 <div className=' mt-7 text-xs xl:text-sm font-bold '>
     Cart
 </div>
