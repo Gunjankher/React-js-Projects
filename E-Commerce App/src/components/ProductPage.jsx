@@ -31,13 +31,24 @@ if(!product?.title)return <h1>loading....</h1>
 <div>
 <ProductDetails product={product} ratings={true} />
 </div>
-<div></div>
+<div className='text-base xl:text-lg'> {product.description}</div>
 </div>
 {/* right */}
-<div className='col-span-2 bg-yellow-400'>
-  hi
+<div className='col-span-2 bg-white '>
+  <div className='text-xl xl:text-2xl font-semibold'>{product.price}</div>
+  <div className='text-base xl:text-lg font-semibold '>{product.oldPrice}</div>
+  <div classname = 'text-sm xl:text-base font-semibold '>Free returns</div>
+  <div className='text-sm xl:text-base font-semibold'>Free Delivery</div>
+  <div className='text-base xl:text-lg font-semibold'>In Stock</div>
+  <div className='text-base xl:text-lg'>Quantity:
+<select>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+</select>
+  </div>
+<button>Add to Cart</button>
 </div>
-
 </div>
     </div>
     </div>
