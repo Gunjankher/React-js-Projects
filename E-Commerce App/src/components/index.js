@@ -6,7 +6,7 @@ import Checkout from "./Checkout";
 import Navbar from "./Navbar";
 import SearchResults from "./SearchResults";
 import Search from "./Search";
-
+import ProductDetails from './ProductDetails'
 
 export {
     Homepage,
@@ -17,5 +17,6 @@ export {
     Navbar,
     SearchResults,
     Search,
+    ProductDetails,
 
 }
