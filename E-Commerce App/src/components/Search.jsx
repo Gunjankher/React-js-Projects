@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 
 function Search() {
+
+const [suggestion , setSuggestion] = useEffect(null)
+
   return (
     <div className=' w-[100%]'>
         <div className='flex items-center h-10 bg-amazonclone-yellow rounded'>
@@ -19,6 +22,11 @@ function Search() {
                 <MagnifyingGlassIcon className='h-[27px] m-auto stroke-slate-900' />
             </button>
         </div>
+        {suggestion &&
+        <div>
+          
+        </div>
+        }
     </div>
   )
 }
